@@ -7,11 +7,11 @@
 body{
     background: #191919;
 }
-.galery{
+.gallery{
     width: 900px;
     display: flex;
 }
-.galery div{
+.gallery div{
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -19,7 +19,25 @@ body{
     padding: 10px;
     flex: none;
 }
-
-.galery div img{
+.gallery div img{
     width:100% ;
+}
+.gallery::-webkit-scrollbar{
+display: none;
+}
+.gallery-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20% auto;
+}
+#backBtn{
+width: 50px;
+cursor:pointer;
+margin: 40px;
+}
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
 }
