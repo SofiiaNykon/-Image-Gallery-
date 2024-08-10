@@ -4,3 +4,22 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
+body{
+    background: #191919;
+}
+.galery{
+    width: 900px;
+    display: flex;
+}
+.galery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.galery div img{
+    width:100% ;
+}
