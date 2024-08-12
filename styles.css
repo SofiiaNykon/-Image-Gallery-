@@ -10,6 +10,7 @@ body{
 .gallery{
     width: 900px;
     display: flex;
+    overflow-x: scroll;
 }
 .gallery div{
     width: 100%;
@@ -20,7 +21,9 @@ body{
     flex: none;
 }
 .gallery div img{
-    width:100% ;
+    width:100%;
+    filter: grayscale(100%);
+    transform: 0.5s;
 }
 .gallery::-webkit-scrollbar{
 display: none;
@@ -29,9 +32,9 @@ display: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20% auto;
+    margin: 10% auto;
 }
-#backBtn{
+#backBtn, #nextBtn{
 width: 50px;
 cursor:pointer;
 margin: 40px;
